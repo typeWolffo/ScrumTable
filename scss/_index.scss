@@ -1,7 +1,7 @@
 html {
     background: rgb(48, 48, 48);
     background: linear-gradient(120deg, rgba(48, 48, 48, 1) 0%, rgba(84, 84, 84, 1) 100%);
-    overflow: hidden;
+    // overflow: hidden;
 }
 
 .main {
@@ -102,7 +102,7 @@ html {
                 align-items: center;
                 margin-top: 10px;
 
-                .add {
+                .add-in-modal {
                     width: 150px;
                     height: 40px;
                     border: none;
