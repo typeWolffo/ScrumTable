@@ -1,6 +1,7 @@
 html {
     background: rgb(48, 48, 48);
     background: linear-gradient(120deg, rgba(48, 48, 48, 1) 0%, rgba(84, 84, 84, 1) 100%);
+    font-family: 'Ubuntu', ;
     // overflow: hidden;
 }
 
@@ -16,6 +17,7 @@ html {
         margin-left: 1rem;
         margin-right: 1rem;
     }
+
 }
 
 .todo,
@@ -24,6 +26,26 @@ html {
     height: 80%;
     border: 1px solid red;
     width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .newTask {
+        min-height: 40px;
+        height: 40px;
+        max-height: 100px;
+        width: 80%;
+        margin-top: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: lighten($color: #333333, $amount: 10%);
+
+        p {
+            color: #c3c3c3;
+            display: flex;
+            align-self: center;
+        }
+    }
 }
 
 .manage {
@@ -110,7 +132,7 @@ html {
                     outline: none;
                     background-color: #303030;
                     color: #c8c8c8;
-            
+
                     &:hover {
                         background-color: darken($color: #303030, $amount: 5%);
                         transition: 0.4s ease-in-out;

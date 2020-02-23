@@ -7,7 +7,6 @@ addBtn.addEventListener('click', function() {
 
     let task = document.createElement('div');
     task.setAttribute("class", "newTask");
-    // task.innerHTML = test;
     document.querySelector('.todo').appendChild(task);
 
     let task_content = document.createElement('p');
