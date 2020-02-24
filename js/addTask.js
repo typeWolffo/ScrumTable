@@ -5,11 +5,11 @@ let test = 0;
 addBtn.addEventListener('click', function() {
 
 
-    let task = document.createElement('div');
-    task.setAttribute("class", "newTask");
-    document.querySelector('.todo').appendChild(task);
+    // let task = document.createElement('div');
+    // task.setAttribute("class", "newTask");
+    // document.querySelector('.todo').appendChild(task);
 
-    let task_content = document.createElement('p');
+    let task_content = document.createElement('li');
     task_content.setAttribute("class", "taskContent");
     task_content.innerHTML = test;
     document.querySelector('.newTask').appendChild(task_content);

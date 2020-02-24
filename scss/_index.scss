@@ -2,7 +2,7 @@ html {
     background: rgb(48, 48, 48);
     background: linear-gradient(120deg, rgba(48, 48, 48, 1) 0%, rgba(84, 84, 84, 1) 100%);
     font-family: 'Ubuntu', ;
-    // overflow: hidden;
+    overflow: hidden;
 }
 
 .main {
@@ -18,6 +18,19 @@ html {
         margin-right: 1rem;
     }
 
+    .title {
+        display: flex;
+        flex-basis: 100%;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            font-size: 40px;
+            font-weight: 700;
+            color: #c3c3c3;
+        }
+    }
+
 }
 
 .todo,
@@ -30,20 +43,31 @@ html {
     flex-wrap: wrap;
     justify-content: center;
 
+
     .newTask {
-        min-height: 40px;
-        height: 40px;
-        max-height: 100px;
+        // min-height: 40px;
+        height: 80%;
         width: 80%;
         margin-top: 10px;
         border: none;
         border-radius: 5px;
-        background-color: lighten($color: #333333, $amount: 10%);
+        // background-color: lighten($color: #333333, $amount: 10%);
+        overflow-y: auto;
 
-        p {
+
+        li {
             color: #c3c3c3;
             display: flex;
+            font-size: 20px;
             align-self: center;
+            justify-content: center;
+            height: 40px;
+            padding: 10px 0;
+
+            &:hover,
+            &:focus {
+                background-color: lighten($color: #333333, $amount: 5%);
+            }
         }
     }
 }
